@@ -15,7 +15,7 @@ public class ApplicationTests {
 @Test
 	public void testVanillaService() {
 		RestTemplate restTemplate = new RestTemplate();
-		Greet greet = restTemplate.getForObject("http://localhost:8080", Greet.class);
+		Greet greet = restTemplate.getForObject("http://localhost:8081", Greet.class);
 	    Assert.assertEquals("Hello World!", greet.getMessage());
 	}
 }
